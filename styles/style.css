@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=PT+Serif&family=Poppins:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 70%;
+  margin: 0 auto;
+}
+header {
+  width: 90%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+}
+header section {
+  width: 50%;
+  margin-bottom: 0;
+}
+h1 {
+  font-family: "PT Serif", serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto 100px auto;
+}
+
+section {
+  width: calc(33% - 38px);
+  margin-bottom: 50px;
+  padding: 20px;
+}
+.box-inner {
+  position: relative;
+  padding: 0px 30px 30px 40px;
+}
+
+img {
+  width: 100%;
+}
+figcaption {
+  margin-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.sideways {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+
+.tag-text {
+  font-family: "PT Serif", serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#box-2,
+#box-5 {
+  position: relative;
+  top: 6rem;
+}
+footer {
+  text-align: center;
+  margin: 200px auto 20px auto;
+}
+.footer-text,
+a {
+  color: #bdbdbd;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+a {
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px auto;
+  }
+  header section {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2.3rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+  }
+  p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .tag-text {
+    font-size: 0.6rem;
+  }
+
+  section {
+    width: calc(50% - 20px);
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  .box-inner {
+    position: relative;
+    padding: 0px 20px 10px 25px;
+  }
+  figcaption {
+    margin-top: 0;
+    font-size: 0.85rem;
+  }
+
+  #box-2,
+  #box-5 {
+    position: relative;
+    top: 0;
+  }
+
+  #box-2,
+  #box-4,
+  #box-6 {
+    position: relative;
+    top: 1.3rem;
+  }
+
+  footer {
+    margin: 100px auto 20px auto;
+  }
+  .footer-text,
+  a {
+    font-size: 0.7rem;
+  }
+}
